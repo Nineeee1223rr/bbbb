@@ -51,48 +51,84 @@ export const initialSettings = {
     image_steps: 20,
     system_prompt: '   ',
 }
-
 export type Settings = typeof initialSettings
 
 export const textGenModels: Model[] = [{
+    id: '@cf/qwen/qwen1.5-14b-chat-awq',
+    name: 'qwen1.5-14b-chat-awq',
+    provider: 'workers-ai',
+    type: 'chat'
+}, 
     id: '@cf/meta/llama-2-7b-chat-fp16',
     name: 'llama-2-7b-chat-fp16',
     provider: 'workers-ai',
     type: 'chat'
-},
+}, 
 {
-    id: '@cf/meta/llama-2-7b-chat-int8',
+    id: '@cf/openchat/openchat-3.5-0106',
+    name: 'openchat-3.5-0106',
+    provider: 'workers-ai',
+    type: 'chat'
+}, 
+   { id: '@cf/meta/llama-2-7b-chat-int8',
     name: 'llama-2-7b-chat-int8',
     provider: 'workers-ai',
     type: 'chat'
-},
+}, 
 {
+    id: '@cf/google/gemma-7b-it-lora',
+    name: 'gemma-7b-it-lora',
+    provider: 'workers-ai',
+    type: 'chat'
+}, 
     id: '@cf/mistral/mistral-7b-instruct-v0.1',
     name: 'mistral-7b-instruct-v0.1',
     provider: 'workers-ai',
     type: 'chat'
 },
 {
+    id: '@hf/thebloke/openhermes-2.5-mistral-7b-awq',
+    name: 'openhermes-2.5-mistral-7b-awq',
+    provider: 'workers-ai',
+    type: 'chat'
+}, 
+{
     id: '@hf/thebloke/deepseek-coder-6.7b-base-awq',
     name: 'deepseek-coder-6.7b-base-awq',
     provider: 'workers-ai',
     type: 'chat'
-},
+}, 
 {
+    id: '@hf/thebloke/neural-chat-7b-v3-1-awq',
+    name: 'neural-chat-7b-v3-1-awq',
     id: '@hf/thebloke/deepseek-coder-6.7b-instruct-awq',
     name: 'deepseek-coder-6.7b-instruct-awq',
     provider: 'workers-ai',
     type: 'chat'
 },
 {
+    id: '@hf/nexusflow/starling-lm-7b-beta',
+    name: 'starling-lm-7b-beta',
     id: '@cf/deepseek-ai/deepseek-math-7b-base',
     name: 'deepseek-math-7b-base',
     provider: 'workers-ai',
     type: 'chat'
-},
+}, 
 {
+    id: '@cf/meta/llama-3-8b-instruct',
+    name: 'llama-3-8b-instruct',
+    provider: 'workers-ai',
+    type: 'chat'
+}, 
+{ 
     id: '@cf/deepseek-ai/deepseek-math-7b-instruct',
     name: 'deepseek-math-7b-instruct',
+    provider: 'workers-ai',
+    type: 'chat'
+},
+{
+    id: '@cf/meta/llama-2-7b-chat-fp16',
+    name: 'llama-2-7b-chat-fp16',
     provider: 'workers-ai',
     type: 'chat'
 },
@@ -103,14 +139,75 @@ export const textGenModels: Model[] = [{
     type: 'chat'
 },
 {
+    id: '@cf/meta/llama-2-7b-chat-int8',
+    name: 'llama-2-7b-chat-int8',
+   provider: 'workers-ai',
+    type: 'chat'
+},
+{
     id: '@cf/tiiuae/falcon-7b-instruct',
     name: 'falcon-7b-instruct',
+    provider: 'workers-ai',
+    type": 'chat'
+    type: 'chat'
+},
+{
+    id: '@cf/mistral/mistral-7b-instruct-v0.1',
+    name: 'mistral-7b-instruct-v0.1',
     provider: 'workers-ai',
     type: 'chat'
 },
 {
     id: '@cf/google/gemma-2b-it-lora',
     name: 'gemma-2b-it-lora',
+    provider: 'workers-ai',
+    type: 'chat'
+},
+{
+    "id": "@hf/thebloke/deepseek-coder-6.7b-base-awq",
+    "name": "deepseek-coder-6.7b-base-awq",
+    "provider": "workers-ai",
+    "type": "chat"
+},
+{
+    "id": "@hf/thebloke/deepseek-coder-6.7b-instruct-awq",
+    "name": "deepseek-coder-6.7b-instruct-awq",
+    "provider": "workers-ai",
+    "type": "chat"
+},
+{
+    "id": "@cf/deepseek-ai/deepseek-math-7b-base",
+    "name": "deepseek-math-7b-base",
+    "provider": "workers-ai",
+    "type": "chat"
+},
+{
+    "id": "@cf/deepseek-ai/deepseek-math-7b-instruct",
+    "name": "deepseek-math-7b-instruct",
+    "provider": "workers-ai",
+    "type": "chat"
+},
+{
+    "id": "@cf/thebloke/discolm-german-7b-v1-awq",
+    "name": "discolm-german-7b-v1-awq",
+    "provider": "workers-ai",
+    "type": "chat"
+},
+{
+    "id": "@cf/tiiuae/falcon-7b-instruct",
+    "name": "falcon-7b-instruct",
+    "provider": "workers-ai",
+    "type": "chat"
+},
+{
+    "id": "@cf/google/gemma-2b-it-lora",
+    "name": "gemma-2b-it-lora",
+    "provider": "workers-ai",
+    "type": "chat"
+},
+{
+    id: '@hf/google/gemma-7b-it',
+    name: 'gemma-7b-it',
     provider: 'workers-ai',
     type: 'chat'
 },
@@ -235,14 +332,14 @@ export const textGenModels: Model[] = [{
     type: 'chat'
 },
 {
-    id: '@cf/tinyllama/tinyllama-1.1b-chat-v1.0',
-    name: 'tinyllama-1.1b-chat-v1.0',
+    id: '@cf/fblgit/una-cybertron-7b-v2-bf16',
+    name: 'una-cybertron-7b-v2-bf16',
     provider: 'workers-ai',
     type: 'chat'
 },
 {
-    id: '@cf/fblgit/una-cybertron-7b-v2-bf16',
-    name: 'una-cybertron-7b-v2-bf16',
+    id: '@hf/thebloke/zephyr-7b-beta-awq',
+    name: 'zephyr-7b-beta-awq',
     provider: 'workers-ai',
     type: 'chat'
 },
@@ -269,5 +366,5 @@ export const imageGenModels: Model[] = [{
     provider: 'workers-ai-image',
     type: 'text-to-image'
 }]
-
 export const models: Model[] = [...textGenModels, ...imageGenModels]
+
