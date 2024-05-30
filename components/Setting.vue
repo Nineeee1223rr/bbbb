@@ -22,7 +22,7 @@ const settings = useLocalStorage('settings', initialSettings)
       </li>
       <li>
         {{ $t('system_prompt') }}
-        <UTextarea autoresize placeholder="You are ChatGPT..." v-model.trim.lazy="settings.system_prompt" class="mt-1"/>
+        <UTextarea autoresize placeholder=" " v-model.trim.lazy="settings.system_prompt" class="mt-1"/>
       </li>
     </ul>
   </UModal>
