@@ -111,7 +111,7 @@ export const textGenModels: Model[] = [{
     type: 'chat'
 },  
 {
- id: '@cf/deepseek-ai/deepseek-math-7b-base',
+    id: '@cf/deepseek-ai/deepseek-math-7b-base',
     name: 'deepseek-math-7b-base',
     provider: 'workers-ai',
     type: 'chat'
