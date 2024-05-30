@@ -151,7 +151,6 @@ export const textGenModels: Model[] = [{
     name: 'falcon-7b-instruct',
     provider: 'workers-ai',
     type": 'chat'
-    type: 'chat'
 },
 {
     id: '@cf/mistral/mistral-7b-instruct-v0.1',
