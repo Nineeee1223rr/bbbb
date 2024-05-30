@@ -43,14 +43,6 @@ export class Database extends Dexie {
         })
     }
 }
-
-export const DB = new Database();
-
-export const initialSettings = {
-     '',
-    image_steps: 20,
-    system_prompt: '   ',
-}
 export type Settings = typeof initialSettings
 
 export const textGenModels: Model[] = [{
@@ -59,6 +51,7 @@ export const textGenModels: Model[] = [{
     provider: 'workers-ai',
     type: 'chat'
 }, 
+{
     id: '@cf/meta/llama-2-7b-chat-fp16',
     name: 'llama-2-7b-chat-fp16',
     provider: 'workers-ai',
@@ -70,7 +63,8 @@ export const textGenModels: Model[] = [{
     provider: 'workers-ai',
     type: 'chat'
 }, 
-   { id: '@cf/meta/llama-2-7b-chat-int8',
+{ 
+    id: '@cf/meta/llama-2-7b-chat-int8',
     name: 'llama-2-7b-chat-int8',
     provider: 'workers-ai',
     type: 'chat'
@@ -101,6 +95,10 @@ export const textGenModels: Model[] = [{
 {
     id: '@hf/thebloke/neural-chat-7b-v3-1-awq',
     name: 'neural-chat-7b-v3-1-awq',
+    provider: 'workers-ai',
+    type: 'chat'
+}, 
+{
     id: '@hf/thebloke/deepseek-coder-6.7b-instruct-awq',
     name: 'deepseek-coder-6.7b-instruct-awq',
     provider: 'workers-ai',
@@ -109,7 +107,11 @@ export const textGenModels: Model[] = [{
 {
     id: '@hf/nexusflow/starling-lm-7b-beta',
     name: 'starling-lm-7b-beta',
-    id: '@cf/deepseek-ai/deepseek-math-7b-base',
+    provider: 'workers-ai',
+    type: 'chat'
+},  
+{
+ id: '@cf/deepseek-ai/deepseek-math-7b-base',
     name: 'deepseek-math-7b-base',
     provider: 'workers-ai',
     type: 'chat'
@@ -141,7 +143,7 @@ export const textGenModels: Model[] = [{
 {
     id: '@cf/meta/llama-2-7b-chat-int8',
     name: 'llama-2-7b-chat-int8',
-   provider: 'workers-ai',
+    provider: 'workers-ai',
     type: 'chat'
 },
 {
@@ -367,4 +369,3 @@ export const imageGenModels: Model[] = [{
     type: 'text-to-image'
 }]
 export const models: Model[] = [...textGenModels, ...imageGenModels]
-
