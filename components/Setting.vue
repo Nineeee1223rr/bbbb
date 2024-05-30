@@ -13,11 +13,6 @@ const settings = useLocalStorage('settings', initialSettings)
     <ul class="flex flex-col space-y-2 p-4">
       <li class="flex items-end">
         <div class="flex flex-col">
-          OPENAI_API_KEY
-          <span class="text-xs text-gray-500">{{ $t('use_own_key') }}</span>
-        </div>
-        <UInput placeholder="sk-xxx" v-model.trim.lazy="settings.openaiKey" class="ml-auto"/>
-      </li>
       <li>
         <div class="flex">
           {{ $t('img_gen_steps') }}
