@@ -97,22 +97,22 @@ export const textGenModels: Model[] = [{
     type: 'chat'
 },
 {
-    "id": "@cf/meta/llama-2-7b-chat-fp16",
-    "name": "llama-2-7b-chat-fp16",
-    "provider": "workers-ai",
-    "type": "chat"
+    id: '@cf/meta/llama-2-7b-chat-fp16',
+    name: 'llama-2-7b-chat-fp16',
+    provider: 'workers-ai',
+    type: 'chat'
 },
 {
-    "id": "@cf/meta/llama-2-7b-chat-int8",
-    "name": "llama-2-7b-chat-int8",
-    "provider": "workers-ai",
-    "type": "chat"
+    id: '@cf/meta/llama-2-7b-chat-int8',
+    name: 'llama-2-7b-chat-int8',
+    provider: 'workers-ai',
+    type": 'chat'
 },
 {
-    "id": "@cf/mistral/mistral-7b-instruct-v0.1",
-    "name": "mistral-7b-instruct-v0.1",
-    "provider": "workers-ai",
-    "type": "chat"
+    id: '@cf/mistral/mistral-7b-instruct-v0.1',
+    name: 'mistral-7b-instruct-v0.1',
+    provider: 'workers-ai',
+    type: 'chat'
 },
 {
     "id": "@hf/thebloke/deepseek-coder-6.7b-base-awq",
