@@ -75,11 +75,6 @@ export const textGenModels: Model[] = [{
     provider: 'workers-ai',
     type: 'chat'
 }, 
-    id: '@cf/mistral/mistral-7b-instruct-v0.1',
-    name: 'mistral-7b-instruct-v0.1',
-    provider: 'workers-ai',
-    type: 'chat'
-},
 {
     id: '@hf/thebloke/openhermes-2.5-mistral-7b-awq',
     name: 'openhermes-2.5-mistral-7b-awq',
