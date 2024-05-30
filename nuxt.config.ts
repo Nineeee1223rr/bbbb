@@ -14,15 +14,15 @@ export default defineNuxtConfig({
     },
     app: {
         head: {
-            title: 'CF AI Web',
+            title: 'MyGPT',
             meta: [
                 {
                     name: 'keywords',
-                    content: 'CF AI Web, AI, Cloudflare Workers, ChatGPT, GeminiPro, Google Generative AI'
+                    content: 'MyGPT'
                 },
                 {
                     name: 'description',
-                    content: 'Integrated web platform supporting GeminiPro/Cloudflare Workers AI/ChatGPT by Jazee6'
+                    content: 'MyGPT by WOKA'
                 }
             ],
             link: [
